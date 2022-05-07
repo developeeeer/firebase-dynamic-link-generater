@@ -56,7 +56,8 @@ if __name__ == "__main__":
                 target["username"],
                 target["id"],
                 dynamic_link,
-                dynamic_link_long
+                dynamic_link_long,
+                link
             ])
     except Exception as err:
         print(f"ERR!: {err}")
