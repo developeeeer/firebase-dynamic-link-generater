@@ -1,3 +1,4 @@
 /.env
 /config/target_list.csv
-/results.csv
+/old_results.csv
+/config/amulate.csv

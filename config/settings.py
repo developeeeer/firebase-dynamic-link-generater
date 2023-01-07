@@ -11,7 +11,7 @@ IOS_BUNDLE_ID = os.getenv("IOS_BUNDLE_ID")
 IOS_CUSTOM_SCHEME = os.getenv("IOS_CUSTOM_SCHEME")
 IOS_IPAD_BUNDLE_ID = os.getenv("IOS_IPAD_BUNDLE_ID")
 IOS_APP_STORE_ID = os.getenv("IOS_APP_STORE_ID")
-SOCIAL_IMAGE_LINK = os.getenv("SOCIAL_IMAGE_ßLINK")
+SOCIAL_IMAGE_LINK = os.getenv("SOCIAL_IMAGE_LINK")
 
 BASE_URL = os.getcwd()
 
@@ -22,7 +22,7 @@ HEADERS = {"Content-Type": "application/json"}
 DEFAULT_PARAMS = {
 "dynamicLinkInfo": {
     "domainUriPrefix": BASE_DOMAIN_URI_PREFIX,
-    "link": "",
+    "link": "https://service.onereco.jp",
     "androidInfo": {
       "androidPackageName": ANDROID_PACKAGE_NAME,
     },
@@ -36,7 +36,7 @@ DEFAULT_PARAMS = {
       "enableForcedRedirect": False,
     },
     "socialMetaTagInfo": {
-      "socialTitle": "",
+      "socialTitle": "ONERECO",
       "socialDescription": "",
       "socialImageLink": SOCIAL_IMAGE_LINK
     }
@@ -49,7 +49,8 @@ DEFAULT_PARAMS = {
 DEFAULT_PARAMS_LONG_DYNAMIC_LINK = {
    "longDynamicLink": f"{BASE_DOMAIN_URI_PREFIX}"
                       f"?apn={ANDROID_PACKAGE_NAME}"
-                      f"&ibi={IOS_BUNDLE_ID}",
+                      f"&ibi={IOS_BUNDLE_ID}"
+                      f"&st=ONERECO",
    "suffix": {
      "option": "UNGUESSABLE"
    }
